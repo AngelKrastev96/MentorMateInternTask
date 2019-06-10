@@ -77,7 +77,7 @@ public class Main {
                 
             }else System.out.println("File result.csv already exists in the project root directory");
             
-            ;  
+              
             FileWriter csvWriter = new FileWriter(newCsv);  
             csvWriter.append("Name, Score\r\n");
             for(int i = 0; i < topEmployees.size(); i++){
