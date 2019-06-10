@@ -82,7 +82,7 @@ public class Main {
             csvWriter.append("Name, Score\r\n");
             for(int i = 0; i < topEmployees.size(); i++){
             	// filter topEpmployees that have sales period that is equal or less than the periodLimit property
-            	if( periodLimit <= topEmployees.get(i).getSalesPeriod() ){
+            	if( topEmployees.get(i).getSalesPeriod() <= periodLimit ){
             	csvWriter.append(topEmployees.get(i).getName() + " , ");
                 csvWriter.append(Double.toString(topEmployees.get(i).getScore()) + "\r\n");
             	}
